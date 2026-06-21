@@ -1,0 +1,26 @@
+/* Core card structure and hover animation setup */
+.profile-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Smoothly animates the background color and the lifting effect */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: sans-serif;
+}
+
+/* Lifting animation on hover */
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensuring the profile picture is a perfect circle */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}

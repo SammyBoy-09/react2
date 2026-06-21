@@ -1,0 +1,10 @@
+.nav-link {
+  text-decoration: none;
+}
+
+/* This is the class applied when the NavLink detects the current URL */
+.active-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e90ff !important; /* Highlights the active link in blue */
+}
