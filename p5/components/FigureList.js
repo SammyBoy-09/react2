@@ -4,15 +4,15 @@ import BasicFigure from './BasicFigure';
 const FigureList = () => {
   // Initial state with 2 default images
   const [figures, setFigures] = useState([
-    { imageUrl: 'https://picsum.photos/200?random=1', caption: 'Image 1' },
-    { imageUrl: 'https://picsum.photos/200?random=2', caption: 'Image 2' }
+    { imageUrl: 'https://loremflickr.com/320/240?random=1', caption: 'Image 1' },
+    { imageUrl: 'https://loremflickr.com/320/240?random=2', caption: 'Image 2' }
   ]);
 
   const addFigure = () => {
     const newId = figures.length + 1;
     // Spread existing figures, then append the new object
     setFigures([...figures, { 
-      imageUrl: `https://picsum.photos/200?random=${newId}`, 
+      imageUrl: `https://loremflickr.com/320/240?random=${newId}`, 
       caption: `Image ${newId}` 
     }]);
   };
